@@ -14,7 +14,6 @@
     "smart-contracts"
   ],
   "homepage": "https://protofire.github.io/solhint/",
-  "repository": "https://github.com/bretth18/solhint",
   "scripts": {
     "exec-tests": "nyc mocha --recursive && nyc report --reporter=text-lcov | coveralls",
     "test:coverage": "npm run exec-tests",
@@ -68,5 +67,12 @@
   },
   "optionalDependencies": {
     "prettier": "^1.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bretth18/solhint.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
